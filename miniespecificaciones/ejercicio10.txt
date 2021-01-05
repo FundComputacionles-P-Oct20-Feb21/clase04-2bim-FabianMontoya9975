@@ -1,23 +1,26 @@
-1.  Inicio
-2.  funcion principal()
-3.      variable, i[0-n]
-4.      variable2, i[0-n]
-6.      variable <-- obtenerValor(2) 
-7.      variable2 <-- obtenerValor(0) 
-8.      obtenerSuma(variable, variable2)
-9.  fin funcion principal 
-10. 
-11.  funcion obtenerSuma(a, i; b, i) 
-12.     p, i[0-n]
-13.     p <-- a + b
-14.     Escribir "La suma es :" + p
-15.  fin funcion obtenerSuma
-16.
-22.  funcion obtenerValor(a, i) : i
-21.     m, i[0-n]
-23.     (valores(5),i[0-n])
-24.     valores <-- {5, 10, 15, 20, 25}
-24.     m <-- valores[a]
-25.     return m
-23.  fin funcion obtenerValor
-22. Fin
+1. Inicio
+2. funcion principal()
+3.     variable, i[0-n]
+4.     variable2, i[0-n]
+5.     variable <-- obtenerValor(2)
+6.     variable2 <-- obtenerValor(0)
+7.     obtenerSuma(variable, variable2)   // (15, 5)
+8. fin funcion principal
+9.
+10. funcion obtenerSuma(a, i; b, i)
+11.     p, i[0-n]
+12.     p <-- a + b
+13.     Escribir "La suma es :" + p   // La suma es :20
+14. fin funcion obtenerSuma
+15.
+16. funcion obtenerValor(a, i) : i
+17.     m, i[0-n]
+18.     (valores(5),i[0-n])
+19.     valores <-- {5, 10, 15, 20, 25}
+20.     m <-- valores[a] // m toma el valor de la posición 2
+                         // 15
+                         // m toma el valor de la posición 0
+                         // 15
+21.     return m   // 15  // 5
+22. fin funcion obtenerValor
+23. Fin
